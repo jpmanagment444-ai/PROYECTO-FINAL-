@@ -1,0 +1,61 @@
+:root {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: #f4f0e8;
+  background: #0d1014;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --fondo: #0d1014;
+  --superficie: #15191e;
+  --texto: #f4f0e8;
+  --texto-suave: #9b9a95;
+  --oro: #c5a56a;
+  --oro-claro: #e2c88e;
+  --borde: rgb(255 255 255 / 10%);
+  --fuente-titulo: "Cormorant Garamond", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 28px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% -20%, rgb(197 165 106 / 6%), transparent 40%),
+    var(--fondo);
+  color: var(--texto);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgb(197 165 106 / 35%);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--oro);
+  outline-offset: 3px;
+}
